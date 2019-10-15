@@ -185,11 +185,11 @@ img {
   justify-content: space-between;
   border-bottom: 2px dashed lightgray;
 }
-.navigation h1 {
-  padding: 30px;
-}
-.navigation nav {
-  padding: 35px;
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .navigation nav a {
   padding: 10px;
@@ -226,6 +226,13 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 200%;
+    padding-left: 5%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -240,6 +247,13 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    width: 200%;
+    padding-left: 5%;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -262,9 +276,21 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 70%;
+  }
 }
 .home .signup {
   display: flex;
